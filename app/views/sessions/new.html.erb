@@ -1,0 +1,25 @@
+<h1>Log in</h1>
+<%=form_tag do %>
+	<table>
+	<tr> 
+		<td><%=label_tag :email %></td> 
+		<td><%=text_field_tag :email %> 
+	</tr> 
+	
+	<tr> 
+		<td><%=label_tag :password %></td> 
+		<td><%=text_field_tag :password %> 
+	</tr> 
+	
+	<tr> 
+		<td><%=submit_tag "Log in" %></td> 
+	</tr> 
+
+	<table>
+
+	<p> New user? <%= link_to "Sign up now!", new_user_path %></p>
+	</table> 
+
+	
+	</table> 
+<% end %> 
